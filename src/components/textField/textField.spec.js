@@ -246,10 +246,11 @@ describe('Text Field directives', function () {
     });
 
     it('should configure the amount of collumn and rows', function configureColsAndRows() {
-      var markup = '<md-textarea-float rows="4" cols="50"' +
+      var markup = '<md-text-float rows="4" cols="50"' +
+        '  type="textarea"' +
         '  label="{{labels.intro}}" ' +
         '  ng-model="user.filledIntro" >' +
-        '</md-textarea-float>';
+        '</md-text-float>';
       var el = buildElement(markup, model);
       var textarea = el.find('textarea');
 
@@ -258,10 +259,11 @@ describe('Text Field directives', function () {
     });
 
     it('should configure the label', function configureLabel() {
-      var markup = '<md-textarea-float rows="4" cols="50"' +
+      var markup = '<md-text-float rows="4" cols="50"' +
+        '  type="textarea"' +
         '  label="{{labels.intro}}" ' +
         '  ng-model="user.filledIntro" >' +
-        '</md-textarea-float>';
+        '</md-text-float>';
       var el = buildElement(markup, model);
       var label = el.find('label');
 
